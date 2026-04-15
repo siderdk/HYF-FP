@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(gh pr create --title 'Add HYF Aarhus partner outreach SPA' --body ':*)",
+      "Bash(gh pr create --title 'Content updates: branding, links, form wiring, project slideshow' --body ':*)"
+    ]
+  }
+}
