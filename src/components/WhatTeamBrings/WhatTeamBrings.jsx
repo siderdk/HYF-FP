@@ -3,7 +3,7 @@ import styles from './WhatTeamBrings.module.css'
 const stats = [
   {
     number: '4–5',
-    unit: 'developers per team',
+    unit: 'developers per team*',
     icon: (
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
         <circle cx="10" cy="9" r="4" stroke="currentColor" strokeWidth="1.75" fill="none"/>
@@ -57,7 +57,7 @@ export default function WhatTeamBrings() {
         </div>
 
         <p className={styles.intro}>
-          A team of 4–5 trainees who are weeks away from finishing a 7-month intensive
+          A team of 4–5 trainees (or more if needed) who are weeks away from finishing a 7-month intensive
           frontend program. They've been coding full-time on weekends for months. Most
           have professional or academic backgrounds before HYF. They are not beginners
           who happen to code.
@@ -78,6 +78,8 @@ export default function WhatTeamBrings() {
             The team follows Agile methods. They run their own stand-ups, manage a Trello
             board, submit pull requests, and do code reviews. You don't need to manage
             them. Just stay available for feedback.
+            <br />
+            <small>*Team size can be increased based on project scope and needs, with a maximum of 10 trainees.</small>
           </p>
         </div>
       </div>

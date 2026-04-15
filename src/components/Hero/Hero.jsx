@@ -24,8 +24,8 @@ export default function Hero() {
         </h1>
 
         <p className={styles.subheadline}>
-          HackYourFuture Aarhus is looking for a company partner for our next
-          frontend final project. A real brief, a real team, a real result.
+          HackYourFuture is looking for a partner for our next
+          frontend final project in Aarhus. A real brief, a real team, a real result.
         </p>
 
         <div className={styles.ctas}>
