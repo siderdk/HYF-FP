@@ -30,8 +30,8 @@
   height: 36px;
   width: auto;
   display: block;
-  /* SVG from GitHub may have a dark background — invert to white */
-  filter: brightness(0) invert(1);
+  /* SVG circle fill (#293A7D) matches navbar background — circle disappears,
+     leaving only the white text paths visible */
 }
 
 /* Curriculum link */

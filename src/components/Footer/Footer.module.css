@@ -28,7 +28,7 @@
   height: 36px;
   width: auto;
   display: block;
-  filter: brightness(0) invert(1);
+  /* SVG renders its own colors — blue circle on black footer background */
 }
 
 .tagline {
