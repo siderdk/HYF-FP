@@ -44,14 +44,14 @@ export default function Navbar() {
           className={styles.logo}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="HackYourFuture Denmark — visit main website (opens in new tab)"
+          aria-label="HackYourFuture Denmark, visit main website (opens in new tab)"
         >
           <img
             src="https://cdn.prod.website-files.com/66f16b1678939bc66db21cc0/66f16bd253854657d909fae6_logo-round.svg"
             alt="HackYourFuture Denmark logo"
             className={styles.logoImg}
-            width="44"
-            height="44"
+            width="56"
+            height="56"
           />
         </a>
 

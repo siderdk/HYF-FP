@@ -28,7 +28,7 @@ const features = [
       </svg>
     ),
     heading: 'Yours to keep',
-    text: 'The codebase lives in a public GitHub repo. You own the IP. Trainees can reference the work in their portfolios — that\'s the deal.',
+    text: 'The codebase lives in a public GitHub repo. You own the IP. Trainees can reference the work in their portfolios. That is the deal.',
   },
 ]
 

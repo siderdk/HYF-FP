@@ -9,8 +9,8 @@ const youBring = [
 ]
 
 const flexible = [
-  'Exact tech decisions — agreed at kick-off with the team',
-  'The scope — we help define what\'s achievable in 4–5 weeks',
+  'Exact tech decisions, agreed at kick-off with the team',
+  'The scope: we help define what is achievable in 4 to 5 weeks',
   'No payment required. This is a collaboration, not a commission.',
 ]
 
@@ -55,8 +55,7 @@ export default function WhatWeNeed() {
 
         <aside className={styles.callout} aria-label="Past experience">
           <p>
-            <strong>We've done this before.</strong> Past teams have built for Tantakuy — a competition
-            platform — and other Aarhus-based companies. The work speaks for itself.
+            <strong>We have done this before.</strong> Past teams have built for Tantakuy, a competition platform, and other Aarhus-based companies. The work speaks for itself.
           </p>
         </aside>
 

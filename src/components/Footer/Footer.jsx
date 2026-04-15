@@ -15,13 +15,19 @@ export default function Footer() {
         <div className={styles.grid}>
           {/* Column 1: Logo + tagline */}
           <div className={styles.col}>
-            <a href="#" className={styles.logo} aria-label="HackYourFuture — go to top">
+            <a
+              href="https://www.hackyourfuture.dk"
+              className={styles.logo}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="HackYourFuture Denmark, visit main website (opens in new tab)"
+            >
               <img
-                src="https://raw.githubusercontent.com/HackYourFuture-CPH/hyf-project-template/main/images/hyf.svg"
-                alt="HackYourFuture"
+                src="https://cdn.prod.website-files.com/66f16b1678939bc66db21cc0/66f16bd253854657d909fae6_logo-round.svg"
+                alt="HackYourFuture Denmark logo"
                 className={styles.logoImg}
-                width="120"
-                height="40"
+                width="56"
+                height="56"
               />
             </a>
             <p className={styles.tagline}>
