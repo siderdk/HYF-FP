@@ -65,6 +65,34 @@
   padding-top: 2.5rem;
 }
 
+.techRowHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.techRowHeader .techLabel {
+  margin-bottom: 0;
+}
+
+.curriculumLink {
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+  transition: color 200ms ease;
+}
+
+.curriculumLink:hover {
+  color: var(--color-primary);
+}
+
 .techLabel {
   font-family: var(--font-body);
   font-size: 0.875rem;

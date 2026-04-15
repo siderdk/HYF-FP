@@ -15,10 +15,15 @@ export default function Footer() {
         <div className={styles.grid}>
           {/* Column 1: Logo + tagline */}
           <div className={styles.col}>
-            <div className={styles.logo}>
-              <span className={styles.logoHyf}>HYF</span>
-              <span className={styles.logoDenmark}>Denmark</span>
-            </div>
+            <a href="#" className={styles.logo} aria-label="HackYourFuture — go to top">
+              <img
+                src="https://raw.githubusercontent.com/HackYourFuture-CPH/hyf-project-template/main/images/hyf.svg"
+                alt="HackYourFuture"
+                className={styles.logoImg}
+                width="120"
+                height="40"
+              />
+            </a>
             <p className={styles.tagline}>
               Training the next generation of web developers. One cohort at a time.
             </p>
@@ -33,9 +38,9 @@ export default function Footer() {
                 <LinkedInIcon />
               </a>
               <a
-                href="https://github.com/HackYourFuture"
+                href="https://github.com/HackYourFuture-CPH/program"
                 className={styles.socialLink}
-                aria-label="HYF on GitHub"
+                aria-label="HYF Frontend Program on GitHub"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -53,6 +58,16 @@ export default function Footer() {
                   <a href={href} className={styles.footerLink}>{label}</a>
                 </li>
               ))}
+              <li>
+                <a
+                  href="https://program.hackyourfuture.dk/course-content/frontend"
+                  className={styles.footerLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Frontend Curriculum ↗
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -67,11 +82,19 @@ export default function Footer() {
               Part of the HYF community active across Europe, training people with
               refugee or international backgrounds in web development since 2015.
             </p>
+            <a
+              href="https://github.com/HackYourFuture-CPH/program"
+              className={styles.programLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Frontend Course Program ↗
+            </a>
           </div>
         </div>
 
         <div className={styles.bottom}>
-          <p>© 2025 HackYourFuture Denmark. Content on this page is for partner outreach purposes.</p>
+          <p>© 2026 HackYourFuture Denmark. Content on this page is for partner outreach purposes.</p>
         </div>
       </div>
     </footer>

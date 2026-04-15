@@ -1,4 +1,5 @@
 import styles from './WhatWeNeed.module.css'
+import Slideshow from '../Slideshow/Slideshow.jsx'
 
 const youBring = [
   'A real product idea or an existing project that needs a frontend',
@@ -58,6 +59,11 @@ export default function WhatWeNeed() {
             platform — and other Aarhus-based companies. The work speaks for itself.
           </p>
         </aside>
+
+        <div className={styles.slideshowSection}>
+          <p className={styles.slideshowLabel}>From past final projects</p>
+          <Slideshow />
+        </div>
       </div>
     </section>
   )

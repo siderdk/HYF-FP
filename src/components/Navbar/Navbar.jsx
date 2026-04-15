@@ -40,8 +40,13 @@ export default function Navbar() {
     <header className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`} role="banner">
       <div className={`container ${styles.inner}`}>
         <a href="#" className={styles.logo} aria-label="HackYourFuture Denmark — go to top">
-          <span className={styles.logoHyf}>HYF</span>
-          <span className={styles.logoDenmark}>Denmark</span>
+          <img
+            src="https://raw.githubusercontent.com/HackYourFuture-CPH/hyf-project-template/main/images/hyf.svg"
+            alt="HackYourFuture"
+            className={styles.logoImg}
+            width="120"
+            height="40"
+          />
         </a>
 
         <nav aria-label="Main navigation">
@@ -60,6 +65,17 @@ export default function Navbar() {
                 </li>
               )
             })}
+            <li>
+              <a
+                href="https://program.hackyourfuture.dk/course-content/frontend"
+                className={styles.curriculumLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Frontend Course curriculum (opens in new tab)"
+              >
+                Curriculum ↗
+              </a>
+            </li>
           </ul>
         </nav>
 
@@ -90,6 +106,17 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="https://program.hackyourfuture.dk/course-content/frontend"
+              className={`${styles.mobileLink} ${styles.mobileCurriculumLink}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={closeMenu}
+            >
+              View Curriculum ↗
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
