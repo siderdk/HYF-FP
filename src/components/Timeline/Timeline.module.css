@@ -1,0 +1,177 @@
+.section {
+  background-color: var(--color-bg-white);
+  padding: clamp(3rem, 6vw, 7rem) 0;
+}
+
+.header {
+  margin-bottom: 3.5rem;
+}
+
+.label {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 0.75rem;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 800px;
+  margin: 0 auto 3.5rem;
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* On desktop, alternate — but given single column we keep it clean */
+@media (min-width: 1024px) {
+  .timeline {
+    max-width: 900px;
+  }
+}
+
+.stepConnector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.stepCircle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.stepLine {
+  width: 2px;
+  flex: 1;
+  min-height: 2rem;
+  background: linear-gradient(to bottom, var(--color-primary), rgba(41, 58, 125, 0.2));
+  margin: 4px 0;
+}
+
+.stepContent {
+  padding-bottom: 2.5rem;
+}
+
+.stepWhen {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.stepLabel {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.stepDesc {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.65;
+  max-width: 540px;
+}
+
+/* Commitment bar */
+.commitmentBar {
+  background-color: var(--color-primary);
+  color: #fff;
+  border-radius: var(--radius-md);
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.commitmentTitle {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-light-blue);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.commitmentItems {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.commitmentItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.commitmentLabel {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.commitmentValue {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.commitmentDivider {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .commitmentBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .commitmentItems {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .commitmentDivider {
+    display: none;
+  }
+}

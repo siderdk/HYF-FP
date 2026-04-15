@@ -1,0 +1,145 @@
+.footer {
+  background-color: var(--color-black);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.inner {
+  padding-top: clamp(3rem, 5vw, 5rem);
+  padding-bottom: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  gap: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.logoHyf {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #fff;
+}
+
+.logoDenmark {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 2px;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.55;
+  max-width: 240px;
+  margin-bottom: 1.25rem;
+}
+
+/* Socials */
+.socials {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-sm);
+  background-color: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.65);
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+.socialLink:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+/* Column */
+.col {}
+
+.colTitle {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 1.25rem;
+}
+
+/* Links */
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.footerLink {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.footerLink:hover {
+  color: #fff;
+}
+
+/* About */
+.aboutText {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.55;
+}
+
+/* Bottom bar */
+.bottom {
+  padding: 1.25rem 0;
+}
+
+.bottom p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .grid > .col:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .grid > .col:last-child {
+    grid-column: auto;
+  }
+}
