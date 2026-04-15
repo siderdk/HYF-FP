@@ -60,7 +60,7 @@ export default function Contact() {
             <span className={styles.label}>Get In Touch</span>
             <h2 id="contact-heading" className={styles.heading}>Let's Talk</h2>
             <p className={styles.subtext}>
-              If this sounds like a fit — or if you're just curious — reach out. We're
+              If this sounds like a fit, or if you are just curious, reach out. We are
               happy to explain the process, answer questions, or set up a quick call.
             </p>
             <a

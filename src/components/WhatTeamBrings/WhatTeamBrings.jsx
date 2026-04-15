@@ -27,7 +27,7 @@ const stats = [
   },
   {
     number: 'Agile',
-    unit: 'workflow — daily stand-ups, weekly sprints, PR reviews',
+    unit: 'workflow with daily stand-ups, weekly sprints and PR reviews',
     icon: (
       <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" focusable="false">
         <path d="M14 4C8.477 4 4 8.477 4 14s4.477 10 10 10 10-4.477 10-10" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" fill="none"/>
@@ -59,7 +59,7 @@ export default function WhatTeamBrings() {
         <p className={styles.intro}>
           A team of 4–5 trainees who are weeks away from finishing a 7-month intensive
           frontend program. They've been coding full-time on weekends for months. Most
-          have professional or academic backgrounds before HYF — they're not beginners
+          have professional or academic backgrounds before HYF. They are not beginners
           who happen to code.
         </p>
 
@@ -77,7 +77,7 @@ export default function WhatTeamBrings() {
           <p>
             The team follows Agile methods. They run their own stand-ups, manage a Trello
             board, submit pull requests, and do code reviews. You don't need to manage
-            them — just stay available for feedback.
+            them. Just stay available for feedback.
           </p>
         </div>
       </div>
