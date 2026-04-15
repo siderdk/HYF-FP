@@ -26,8 +26,8 @@ export default function Footer() {
                 src="https://cdn.prod.website-files.com/66f16b1678939bc66db21cc0/66f16bd253854657d909fae6_logo-round.svg"
                 alt="HackYourFuture Denmark logo"
                 className={styles.logoImg}
-                width="56"
-                height="56"
+                width="90"
+                height="90"
               />
             </a>
             <p className={styles.tagline}>
