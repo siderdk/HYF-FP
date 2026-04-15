@@ -1,12 +1,24 @@
-# HYF Aarhus — Final Project Partner Outreach Page
+# HYF Aarhus — Final Project Partner Outreach
 
-A single-page React application for HackYourFuture Denmark (Aarhus chapter) calling on companies to collaborate on the frontend program's final project.
+A single-page React application for HackYourFuture Denmark (Aarhus chapter), inviting companies to collaborate as partners on the frontend program's final project.
 
-## Project description
+Live site: **https://siderdk.github.io/HYF-FP/**
 
-This outreach page explains the HYF final project program to potential company partners. It covers what the project involves, what the company needs to bring, what the team provides, how the timeline works, and how to get in touch.
+---
+
+## What it is
+
+This outreach page explains the HYF final project program to potential company partners. It covers:
+
+- What the final project involves
+- What the company needs to bring
+- Who the team is and what they deliver
+- How the 5-week timeline works
+- A contact form to get in touch
 
 Built with Vite + React. Styled with CSS Modules. No external UI frameworks.
+
+---
 
 ## Run locally
 
@@ -15,41 +27,61 @@ npm install
 npm run dev
 ```
 
-The app will be available at `http://localhost:5173/[REPO-NAME]/` (replace with your actual repo name configured in `vite.config.js`).
+The app runs at `http://localhost:5173/HYF-FP/`.
+
+---
 
 ## Deploy to GitHub Pages
 
-1. Set the correct repo name in `vite.config.js`:
-
-```js
-const repoName = 'your-repo-name' // TODO: replace with your GitHub repo name
-```
-
-2. Build and deploy:
+Build and push to the `gh-pages` branch:
 
 ```bash
 npm run build
 npm run deploy
 ```
 
-This uses the `gh-pages` package to push the `dist/` folder to the `gh-pages` branch.
+Then in your GitHub repo go to **Settings → Pages**, set source to **Deploy from a branch**, and select the `gh-pages` branch.
 
-Make sure your GitHub repository has GitHub Pages enabled and set to serve from the `gh-pages` branch.
+The repo name used as the base path is set in `vite.config.js`:
 
-Deployed URL: <!-- TODO: add your deployed URL here -->
+```js
+const repoName = 'HYF-FP'
+```
+
+---
 
 ## Tech stack
 
-- [Vite](https://vitejs.dev/) — build tool
-- [React 18](https://react.dev/) — UI library
-- CSS Modules — scoped component styles
-- [gh-pages](https://www.npmjs.com/package/gh-pages) — deployment to GitHub Pages
-- Google Fonts: Space Grotesk + Work Sans
+| Tool | Purpose |
+|---|---|
+| [Vite](https://vitejs.dev/) | Build tool |
+| [React 18](https://react.dev/) | UI library |
+| CSS Modules | Scoped component styles |
+| [gh-pages](https://www.npmjs.com/package/gh-pages) | GitHub Pages deployment |
+| [Formspree](https://formspree.io/) | Contact form backend |
+| Google Fonts | Space Grotesk + Work Sans |
 
-## Form integration
+---
 
-The contact form currently logs submissions without a backend. To wire it up:
+## Contact form
 
-- [Formspree](https://formspree.io/) — add your form endpoint to `Contact.jsx`
-- [Netlify Forms](https://www.netlify.com/products/forms/) — add `data-netlify="true"` to the form element
-- Custom email provider — replace the TODO comment in `Contact.jsx`
+The form submits to Formspree. The endpoint is configured in `src/components/Contact/Contact.jsx`:
+
+```js
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xeevekjg'
+```
+
+To use a different endpoint, replace that value with your own Formspree form ID.
+
+---
+
+## Git workflow
+
+Never commit directly to `main`. Always create a feature branch, push it, and open a pull request for review.
+
+```bash
+git checkout -b your-branch-name
+# make changes
+git push -u origin your-branch-name
+gh pr create
+```
