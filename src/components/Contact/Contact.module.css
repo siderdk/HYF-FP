@@ -114,6 +114,18 @@
   min-height: 120px;
 }
 
+/* Error */
+.errorMsg {
+  font-size: 0.875rem;
+  color: #ffb3b3;
+  line-height: 1.5;
+}
+
+.errorLink {
+  color: #ffb3b3;
+  text-decoration: underline;
+}
+
 /* Form footer */
 .formFooter {
   display: flex;
@@ -135,9 +147,14 @@
   align-self: flex-start;
 }
 
-.submitBtn:hover {
+.submitBtn:hover:not(:disabled) {
   background-color: var(--color-accent-light-blue);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.submitBtn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
 }
 
 .note {

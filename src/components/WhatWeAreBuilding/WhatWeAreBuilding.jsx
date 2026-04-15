@@ -65,7 +65,18 @@ export default function WhatWeAreBuilding() {
         </div>
 
         <div className={styles.techRow}>
-          <p className={styles.techLabel}>Tech stack the team brings</p>
+          <div className={styles.techRowHeader}>
+            <p className={styles.techLabel}>Tech stack the team brings</p>
+            <a
+              href="https://program.hackyourfuture.dk/course-content/frontend"
+              className={styles.curriculumLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="View full Frontend Course curriculum (opens in new tab)"
+            >
+              See full curriculum ↗
+            </a>
+          </div>
           <ul className={styles.tagList} role="list">
             {techTags.map((tag) => (
               <li key={tag} className={styles.tag}>{tag}</li>

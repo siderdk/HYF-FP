@@ -11,11 +11,11 @@ export default function Hero() {
 
       <div className={`container ${styles.content}`}>
         <div className={styles.badge}>
-          <span>Frontend Track</span>
+          <span>Frontend Course</span>
           <span className={styles.badgeDivider}>·</span>
           <span>Aarhus</span>
           <span className={styles.badgeDivider}>·</span>
-          <span>2025</span>
+          <span>2026</span>
         </div>
 
         <h1 className={styles.headline}>

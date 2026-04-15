@@ -21,27 +21,43 @@
 /* Logo */
 .logo {
   display: flex;
-  flex-direction: column;
-  line-height: 1;
+  align-items: center;
   text-decoration: none;
-  color: #fff;
   flex-shrink: 0;
 }
 
-.logoHyf {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+.logoImg {
+  height: 36px;
+  width: auto;
+  display: block;
+  /* SVG from GitHub may have a dark background — invert to white */
+  filter: brightness(0) invert(1);
 }
 
-.logoDenmark {
+/* Curriculum link */
+.curriculumLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.375rem 0.875rem;
+  margin-left: 0.5rem;
+  background-color: var(--color-accent-light-blue);
+  color: var(--color-primary);
   font-family: var(--font-body);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  opacity: 0.75;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 200ms ease;
+}
+
+.curriculumLink:hover {
+  background-color: #fff;
+}
+
+.mobileCurriculumLink {
+  color: var(--color-accent-light-blue) !important;
+  font-weight: 600;
 }
 
 /* Nav links */
