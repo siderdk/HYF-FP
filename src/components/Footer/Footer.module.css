@@ -25,10 +25,10 @@
 }
 
 .logoImg {
-  height: 36px;
-  width: auto;
+  height: 56px;
+  width: 56px;
   display: block;
-  /* SVG renders its own colors — blue circle on black footer background */
+  border-radius: 50%;
 }
 
 .tagline {
