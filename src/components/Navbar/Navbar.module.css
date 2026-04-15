@@ -27,11 +27,10 @@
 }
 
 .logoImg {
-  height: 36px;
-  width: auto;
+  height: 44px;
+  width: 44px;
   display: block;
-  /* SVG circle fill (#293A7D) matches navbar background — circle disappears,
-     leaving only the white text paths visible */
+  border-radius: 50%;
 }
 
 /* Curriculum link */
