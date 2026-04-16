@@ -5,8 +5,8 @@ import styles from './Slideshow.module.css'
 const slides = [
   { id: '1AQlKU_6fo1iU2WF9sFDDQgTD_MY-yDlj', alt: 'HYF final project screenshot 1' },
   { id: '114NiZZxJ8IPz_pBg1ancGKv0sHxhXXdX', alt: 'HYF final project screenshot 2' },
-  { id: '1Px4ipnLhUol36crFyWB8O-OMXq0DQfZw',  alt: 'HYF final project screenshot 3' },
-  { id: '1Hin41b4z7VXsrhU-Ytdv1JPdLn5hOEwx',  alt: 'HYF final project screenshot 4' },
+  { id: '1qGdJRw1m9To7r0JFOzXAuE158VO2nWdF',  alt: 'HYF final project screenshot 3' },
+  { id: '1LjV-O7T53IiYMvX1y9FxoPaAXrD0eWED',  alt: 'HYF final project screenshot 4' },
   { id: '1SHVLCPhYfkZ_qRkq-wQ50fN_XbwzNM2j',  alt: 'HYF final project screenshot 5' },
   { id: '146MVdjVXamx4ZxwK_ryZtPWdurFD7150',  alt: 'HYF final project screenshot 6' },
   { id: '1S4_Rv8bEiJYhWnnbI7A4S1uZerR1MEjv',  alt: 'HYF final project screenshot 7' },
