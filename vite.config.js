@@ -6,5 +6,5 @@ const repoName = 'HYF-FP'
 
 export default defineConfig({
   plugins: [react()],
-  base: `/aarhusfp/`,
+  base: `/`,
 })
